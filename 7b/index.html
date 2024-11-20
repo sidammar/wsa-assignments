@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit to Celsius Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Fahrenheit to Celsius Converter</h1>
+<label for="fahrenheit">Enter temperature in Fahrenheit:</label>
+<input type="number" id="fahrenheit" placeholder="Fahrenheit">
+<button onclick="convertToCelsius()">Convert</button>
+
+<div class="result" id="result"></div>
+
+<script>
+    function convertToCelsius() {
+        // Get the value from the input field
+        const fahrenheit = parseFloat(document.getElementById('fahrenheit').value);
+        
+        // Check if the input is a valid number
+        if (isNaN(fahrenheit)) {
+            document.getElementById('result').innerText = 'Please enter a valid number.';
+            return;
+        }
+        
+        // Convert Fahrenheit to Celsius using the formula
+        const celsius = (fahrenheit - 32) / 1.8;
+        
+        // Display the result
+        document.getElementById('result').innerText = `${fahrenheit}°F is equal to ${celsius.toFixed(2)}°C.`;
+    }
+</script>
+
+</body>
+</html>
