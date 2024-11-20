@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Based Greeting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Welcome Message Based on Time</h1>
+<label for="hour">Enter time (1 to 24):</label>
+<input type="number" id="hour" min="1" max="24" placeholder="Hour (1-24)">
+<label for="ampm">Enter AM or PM:</label>
+<input type="text" id="ampm" placeholder="AM/PM">
+<button onclick="displayMessage()">Submit</button>
+
+<div class="result" id="result"></div>
+
+<script>
+    function displayMessage() {
+        // Get the hour and am/pm input values
+        const hour = parseInt(document.getElementById('hour').value);
+        const ampm = document.getElementById('ampm').value.toLowerCase();
+
+        // Check if the hour is valid
+        if (isNaN(hour) || hour < 1 || hour > 24 || (ampm !== 'am' && ampm !== 'pm')) {
+            document.getElementById('result').innerText = 'Please enter a valid hour (1-24) and AM/PM.';
+            return;
+        }
+
+        // Determine the message based on the hour
+        let message = '';
+
+        if (hour >= 1 && hour < 12) {
+            message = 'Good Morning!';
+        } else if (hour >= 12 && hour < 16) {
+            message = 'Good Noon!';
+        } else if (hour >= 16 && hour < 19) {
+            message = 'Good Evening!';
+        } else {
+            message = 'Good Night!';
+        }
+
+        // Display the result
+        document.getElementById('result').innerText = message;
+    }
+</script>
+
+</body>
+</html>

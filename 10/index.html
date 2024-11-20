@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        .pattern {
+            margin-bottom: 20px;
+        }
+        .result {
+            white-space: pre; /* Preserve whitespace for formatting */
+            font-family: monospace; /* Use monospace font for alignment */
+            font-size: 16px;
+            color: #333;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pattern Generator</h1>
+<button onclick="generatePatterns()">Generate Patterns</button>
+
+<div class="pattern">
+    <h2>Pattern A:</h2>
+    <div class="result" id="patternA"></div>
+</div>
+
+<div class="pattern">
+    <h2>Pattern B:</h2>
+    <div class="result" id="patternB"></div>
+</div>
+
+<div class="pattern">
+    <h2>Pattern C:</h2>
+    <div class="result" id="patternC"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
