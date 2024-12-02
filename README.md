@@ -18,7 +18,17 @@ A list of all my assignments at Webstack Academy.
 
 9. [Print Patterns](https://sidammar.github.io/wsa-assignments/10/index.html)
 
-  
+10. [FizzBuzz Series](https://sidammar.github.io/wsa-assignments/11/index.html)
+
+11. [Nim Game](https://sidammar.github.io/wsa-assignments/12/index.html)
+
+12. [Robot Circle](https://sidammar.github.io/wsa-assignments/13/index.html)
+
+13. [Sum of Series](https://sidammar.github.io/wsa-assignments/14/index.html)
+
+14. [Variable Swap](https://sidammar.github.io/wsa-assignments/15/index.html)
+
+
   
       
 
