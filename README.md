@@ -1,4 +1,4 @@
-A list of all my assignments at Webstack Academy.
+A list of all Webstack Academy assignments.
 
 1. [Website redirect -5s](https://sidammar.github.io/wsa-assignments/1/index.html)
 
@@ -27,6 +27,16 @@ A list of all my assignments at Webstack Academy.
 13. [Sum of Series](https://sidammar.github.io/wsa-assignments/14/index.html)
 
 14. [Variable Swap](https://sidammar.github.io/wsa-assignments/15/index.html)
+
+15. [3 Digit Armstrong Number](https://sidammar.github.io/wsa-assignments/16/index.html)
+
+16. [String Convert - Lowercase to Uppercase](https://sidammar.github.io/wsa-assignments/17/index.html)
+
+17. [Even or odd number](https://sidammar.github.io/wsa-assignments/18/index.html)
+
+18. [Fibonacci series upto n](https://sidammar.github.io/wsa-assignments/19/index.html)
+
+19. [Generate Unique Pin](https://sidammar.github.io/wsa-assignments/20/index.html)
 
 
   
