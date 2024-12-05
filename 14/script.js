@@ -22,3 +22,5 @@ function calculateSum() {
     // Display results
     document.getElementById('result').innerText = `a) ${sumA.toFixed(2)}\nb) ${sumB}`;
 }
+
+console.log();
